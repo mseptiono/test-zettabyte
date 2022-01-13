@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.box-1 {
+    flex: 20%;
+    max-width: 20%;
+    margin:10px;
+    background:grey;
+    }
+
+.box-2 {
+    flex: 30%;
+    max-width: 20%;
+    margin:10px;
+    background:grey;
+    }
+
+.box-3 {
+    flex: 30%;
+    max-width: 20%;
+    margin:10px;
+    background:grey;
+    }
+
+.box-4 {
+    flex: 30%;
+    max-width: 20%;
+    margin:10px;
+    background:grey;
+    }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+   
+</style>
+<body>
+
+<!-- Bagian Header -->
+<div class="header">
+  <h1>HTML + CSS</h1>
+  <p> Muhammad Septiono</p>
+</div>
+
+<!-- Bagian Gambar / Foto -->
+<div class="row"> 
+  <div class="box-1">
+    <img src="https://cdn.djaunter.com/wp-content/uploads/2020/12/Denali-National-Park-and-Preserve-768x512.jpg" style="width:100%">
+    <h3 align="center"> Top Winter Locations </h3>
+    <p align="left">Yellowstone National Park is one of the most well-known and popular camping sites in the US. 
+        <p align="left">Located just south of Montana, Mammoth Campground is the only campground at Yellowstone that is open year-round. </p></p>
+  </div>
+  <div class="box-2">
+     <img src="https://i.pinimg.com/originals/68/4c/3e/684c3ef7c3d7ed1d911fcebabbd118d1.jpg" style="width:100%">
+     <h3 align="center"> Top Eastern Road Trips </h3>
+     <p align="left">Head north way north to the tip of Atlantic Canada for the 185-mile Cabot Trail, a highly rewarding loop through the wilds of northeastern Nova Scotia, hugging the craggy coastline of Cape Breton Island and traversing the canyons and valleys of Cape Breton Highlands National Park</p>
+  </div>
+   <div class="box-3">
+     <img src="https://live.staticflickr.com/65535/48741485371_ff757c5649_b.jpg" style="width:100%">
+     <h3 align="center"> Kongaroo Valley Safari </h3>
+     <p align="left">Award winning Kangaroo Valley Safaris Kayak and Canoe Hire specialise in self guided eco kayak and canoe safaris. 
+         <p align="left">Enjoy the peace and the wildlife of the Morton National Park. No power boats, nature at its best</p></p>
+  </div>
+  <div class="box-4">
+     <img src="https://i.pinimg.com/originals/68/4c/3e/684c3ef7c3d7ed1d911fcebabbd118d1.jpg" style="width:100%">
+    <h3 align="center"> Klik tombol dibawah ini untuk mengetahui informasi pada gambar tersebut !!!</h3>
+    <button onclick="myalert()"> 
+      Tampilkan Informasi Gambar
+    </button>
+    <script> 
+        function myalert() { 
+            alert("Gambar 4 (US Road Trip) " + 
+                "Sebuah jalan di amerika serikat yang memiliki pemandangan yang sangat indah." +  
+                "dan Terlihat di setiap jalan terdapat pohon yang sangat banyak dan sejuk."); 
+        } 
+    </script> 
+  </div>
+</div>
+
+</body>
+</html>
